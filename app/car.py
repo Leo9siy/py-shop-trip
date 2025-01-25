@@ -4,7 +4,7 @@ class Car:
         self.fuel_consumption = fuel_consumption
 
     def get_way_value(self, location_from: list, location_to: list) -> float:
-        way = ((location_to[0] - location_from[0]) ** 2 /
+        way = ((location_to[0] - location_from[0]) ** 2 +
                + (location_to[1] - location_from[1]) ** 2) ** 0.5
         return way * self.fuel_consumption / 100
 
