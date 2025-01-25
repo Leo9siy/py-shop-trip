@@ -13,8 +13,8 @@ class Shop:
 
     def bought(self, name: str, customer_products: dict) -> None:
         print("")
-        print(f"Date: {datetime.datetime.now()
-              .strftime("%d/%m/%Y %H:%M:%S")}")
+        date = datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+        print(f"Date: {date}")
         print(f"Thanks, {name}, for your purchase!")
         print("You have bought:")
 
